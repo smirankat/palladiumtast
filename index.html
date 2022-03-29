@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Palladiumtest</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="header__map-marker">
+          <div class="">
+            <a href="#">
+              <i class="fa-solid fa-location-dot"></i>
+              <!-- <i class="fa-regular fa-location-dot"></i> -->
+            </a>
+          </div>
+        </div>
+        <div class="wrapper">
+          <div class="header">
+            <div class="header__part">
+              <a href="#">Главная</a>
+              <a href="#">О компании</a>
+              <a href="#">Услуги</a>
+            </div>
+            <div class="header__logo">
+              <a href="#">
+                <img class="logo-black" src="img/logo-black.png" alt="logo" />
+                <img class="logo-white" src="img/logo-white.png" alt="logo" />
+              </a>
+            </div>
+            <div class="header__part">
+              <a href="#">Цены</a>
+              <a href="#">Портофолио</a>
+              <a href="#">Контакты</a>
+            </div>
+          </div>
+        </div>
+        <div class="header__phone-icon">
+          <a href="#">
+            <i class="fa fa-phone-flip"></i>
+          </a>
+        </div>
+      </header>
+      <div class="main-first">
+        <div class="heading">
+          <p class="heading__first">Ремонт <span>и</span> дизайн</p>
+          <p>в Москве и Московской области</p>
+        </div>
+        <div class="btn btn-first">
+          <div class="btn-block">
+            <button>Оставить заявку</button>
+            <div class="btn-line"></div>
+          </div>
+        </div>
+        <div class="intro">
+          <ul class="intro__list">
+            <li>
+              <div
+                class="service service-1"
+                onmouseover="changeItem('container-hover-1', 'Усуги по ремонту', '#eb5757', '.modal-1', '.service-1')"
+                onmouseout="rechangeItem('container-hover-1', '.modal-1', '.service-1')"
+              >
+                Услуги по ремонту
+              </div>
+              <div class="modal modal-1">
+                <p>Услуги по ремонту</p>
+                <p>
+                  С другой стороны реализация намеченных плановых заданий
+                  требуют от нас анализа.
+                </p>
+                <div class="arrow__btn">
+                  <button>
+                    <img src="img/arrow.png" alt="arrow" />
+                  </button>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div
+                class="service service-2"
+                onmouseover="changeItem('container-hover-2', 'Виды работ по ремонту', '#219653', '.modal-2', '.service-2')"
+                onmouseout="rechangeItem('container-hover-2', '.modal-2', '.service-2')"
+              >
+                Виды работ
+              </div>
+              <div class="modal modal-2">
+                <p>Виды работ</p>
+                <p>
+                  С другой стороны реализация намеченных плановых заданий
+                  требуют от нас анализа.
+                </p>
+                <div class="arrow__btn">
+                  <button>
+                    <img src="img/arrow.png" alt="arrow" />
+                  </button>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div
+                class="service service-3"
+                onmouseover="changeItem('container-hover-3', 'Дизайн интерьера', '#2F80ED', '.modal-3', '.service-3')"
+                onmouseout="rechangeItem('container-hover-3', '.modal-3', '.service-3')"
+              >
+                Дизайн интерьера
+              </div>
+              <div class="modal modal-3">
+                <p>Дизайн интерьера</p>
+                <p>
+                  С другой стороны реализация намеченных плановых заданий
+                  требуют от нас анализа.
+                </p>
+                <div class="arrow__btn">
+                  <button>
+                    <img src="img/arrow.png" alt="arrow" />
+                  </button>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div
+                class="service service-4"
+                onmouseover="changeItem('container-hover-4', 'Ремонт помещения', '#9B51E0', '.modal-4', '.service-4')"
+                onmouseout="rechangeItem('container-hover-4', '.modal-4', '.service-4')"
+              >
+                Ремонт помещения
+              </div>
+              <div class="modal modal-4">
+                <p>Ремонт помещения</p>
+                <p>
+                  С другой стороны реализация намеченных плановых заданий
+                  требуют от нас анализа.
+                </p>
+                <div class="arrow__btn">
+                  <button>
+                    <img src="img/arrow.png" alt="arrow" />
+                  </button>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <div class="arrow__btn">
+            <button>
+              <img src="img/arrow.png" alt="arrow" />
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="main-second">
+      <div class="projects">
+        <div class="wrapper">
+          <div class="projects__title">
+            Примеры <span>выполненных</span> работ
+            <div class="projects__title_line"></div>
+          </div>
+          <div class="grid-container">
+            <div class="item1">Новостройка</div>
+            <div class="item2">Новостройка</div>
+            <div class="item3">Вторичка</div>
+            <div class="item4">Вторичка</div>
+            <div class="item5">Новостройка</div>
+            <div class="item6">Вторичка</div>
+            <div class="item7">Вторичка</div>
+            <div class="item8">Новостройка</div>
+          </div>
+          <div class="btn">
+            <div class="btn-block">
+              <button>Все проекты</button>
+              <div class="btn-line"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="footer">
+        <div class="wrapper">
+          <div class="footer__title">
+            Связаться <span>с нами</span>
+            <div class="footer__title_line"></div>
+          </div>
+          <div class="footer__container">
+            <div class="footer__block">
+              <div class="address">
+                <p>Офис</p>
+                <p>Москва, ул. Уличная, д. 1, оф. 1</p>
+              </div>
+              <div class="email">
+                <p>E-mail</p>
+                <p>company@company.ru</p>
+              </div>
+              <div class="social">
+                <p>Социальные сети</p>
+                <i class="fa-brands fa-facebook-square"></i>
+                <i class="fa-brands fa-google-plus-square"></i>
+                <i class="fa-brands fa-twitter-square"></i>
+              </div>
+            </div>
+            <div class="footer__block">
+              <div class="working-hours">
+                <p>Режим работы</p>
+                <p>
+                  Пн-Вт: 10<sup>00</sup> — 19<sup>00</sup>; Сб-Вс: 10<sup
+                    >00</sup
+                  >
+                  — 15<sup>00</sup>
+                </p>
+              </div>
+              <div class="phone">
+                <p>Телефон</p>
+                <p>8 (800) 900-00-00</p>
+              </div>
+            </div>
+            <div class="footer__block">
+              <p>Остались вопросы?</p>
+              <form>
+                <label for="name">Ваше имя</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="Иван Иванов"
+                />
+                <label for="email">Телефон/E-mail</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="example@example.com"
+                />
+                <label for="text">Ваше сообщение</label>
+                <div class="message">
+                  <input
+                    type="text"
+                    id="text"
+                    name="text"
+                    placeholder="Текст обращения"
+                  />
+                  <div class="upload-container">
+                    <input id="file-input" type="file" name="file" multiple />
+                    <label for="file-input"
+                      ><i class="fa fa-paperclip" aria-hidden="true"></i
+                    ></label>
+                  </div>
+                </div>
+              </form>
+              <div class="personal-details">
+                Нажимая на кнопку «Получить консультацию», вы соглашаетесь на
+                <span><strong>обработку персональных данных</strong></span>
+              </div>
+              <div class="btn">
+                <div class="btn-block">
+                  <button>Получить консультацию</button>
+                  <div class="btn-line"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="footer-bottom">
+            <p>
+              <strong>© 2022 Сompany.</strong> Соглашение об обработке
+              персональных данных и политика конфиденциальности
+            </p>
+            <p>Сделано в <strong>Palladiumlab</strong></p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="./script.js"></script>
+  </body>
+</html>
